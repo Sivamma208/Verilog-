@@ -19,7 +19,8 @@ module decoder_tb;
   wire i0,i1,i2,i3,i4,i5,i6,i7; //// output declaration
   //order based instantiation as per design module
   decoder dut(i0,i1,i2,i3,i4,i5,i6,i7,a,b,c);
-  //decoder dut(.i0(i0),.i1(i1),.i2(i2),.i3(i3),.i4(i4),.i5(i5),.i6(i6),.i7(i7),.a(a),.b(b),.c(c));
+//name based instantiation as per design module
+  decoder dut(.i0(i0),.i1(i1),.i2(i2),.i3(i3),.i4(i4),.i5(i5),.i6(i6),.i7(i7),.a(a),.b(b),.c(c));
   
   initial begin
     $monitor("values of a = %0d b = %0d c = %0d i0 = %0d i1 = %0d i2 = %0d i3 = %0d i4 = %0d i5 = %0d i6 = %0d i7 = %0d",a,b,c,i0,i1,i2,i3,i4,i5,i6,i7);
