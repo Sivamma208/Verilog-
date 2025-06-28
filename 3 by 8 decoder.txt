@@ -1,5 +1,5 @@
 
-//design code for 3 by 8 decoder using data flow style
+//design code for 3 by 8 decoder using data flow style of scalar version
 module decoder(i0,i1,i2,i3,i4,i5,i6,i7,a,b,c);
    input wire a,b,c;
   output wire i0,i1,i2,i3,i4,i5,i6,i7;
